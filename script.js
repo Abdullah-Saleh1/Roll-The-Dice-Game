@@ -60,7 +60,7 @@ holdBtn.addEventListener('click', function () {
   currentScore = 0; 
   
   // Check If The Player Win
-  if (totalScore >= 20) {
+  if (totalScore >= 100) {
     playing = false; 
     activePlayer.classList.add('player--winner'); 
     dice.classList.add('hidden'); 
@@ -109,6 +109,3 @@ closeBtn.addEventListener('click', closeModal);
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') closeModal(); 
 }); 
-
-
-

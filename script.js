@@ -24,7 +24,7 @@ let currentScore = 0;
 let totalScore = 0; 
 
 
-echo "# Roll-The-Dice-Game" >> README.mdrollBtn.addEventListener('click', function () {
+rollBtn.addEventListener('click', function () {
   // Check If The Player Aleardy Win The Game
   // +document.querySelector('.player--active .total-score').textContent < 100
   if (playing) {

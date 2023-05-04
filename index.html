@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href="dice-5.png" type="image/x-icon">
+    <title>Roll The Dice Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--1 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="total-score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--2">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="total-score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice hidden" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--popup" title="How The Game Works?">?</button>
+    </main>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <i class="close-modal fa-solid fa-xmark"></i>
+      <h3>How The Game Works? ...</h3>
+      <ul>
+        <li>
+          At first you have to roll the dice (you can roll the dice more than once if you want).
+        </li>
+        <li>
+          Each time you roll the dice, the points will be added to the current score (but be careful if you get the number 1, you will lose the current points and switch to the next player).
+        </li>
+        <li>
+          Now that you have collected some points, you must hold these points by pressing the "Hold" button, then the points will be added to the total score.
+        </li>
+        <li>
+          the player who reaches 100 total points or more wins the game.
+        </li>
+      </ul>
+    </div> 
+    <script src="script.js"></script>
+  </body>
+</html>

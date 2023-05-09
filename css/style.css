@@ -167,10 +167,10 @@ main {
   top: 4rem;
 }
 .btn--roll {
-  top: 39.3rem;
+  top: 70%;
 }
 .btn--hold {
-  top: 46.1rem;
+  top: 79%;
 }
 
 .btn:active {
@@ -184,8 +184,8 @@ main {
 .dice {
   position: absolute;
   left: 50%;
-  top: 16.5rem;
-  transform: translateX(-50%);
+  top: 40%;
+  transform: translate(-50%, -50%); 
   height: 10rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
   transition: .3s; 
@@ -232,7 +232,7 @@ main {
   height: 50px; 
   display: grid; 
   place-items: center; 
-  font-size: 2.5; 
+  font-size: 2rem; 
   padding: 0; 
 }
 .btn--popup:active {
@@ -248,7 +248,8 @@ main {
   width: clamp(340px, 70%, 700px); 
   max-height: 90vh; 
   overflow-y: auto; 
-  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  /* background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%); */
+  background-color: #ddd; 
   color: #fff; 
   padding: clamp(2.5rem, 3.5vw, 4rem); 
   font-size: 2rem; 
@@ -259,6 +260,7 @@ main {
 .modal .close-modal {
   content: '\f00d'; 
   font-family: var(--font-awesome);
+  color: #222;
   font-weight: 900; 
   position: absolute; 
   right: 1.5rem; 
@@ -274,44 +276,23 @@ main {
   width: fit-content; 
   margin: auto; 
   margin-bottom: 4rem; 
-  color: #fff; 
+  color: #222; 
   position: relative;
   padding: 1rem; 
   white-space: initial; 
 }
-.modal h3::before {
-  content: ''; 
-  position: absolute; 
-  left: 50%; 
-  top: 50%; 
-  transform: translate(-50%, -50%) skewX(-32deg) scale(1.1);
-  width: 0; 
-  height: 100%; 
-  z-index: -1; 
-  background-color: rgba(255, 255, 255, 0.4); 
-  transition: .3s;
-}
-@media (width <= 767px) {
-  .modal h3::before {
-    display: none;
-  }
-}
-.h3::before {
-  transition-delay: .3s; 
-  width: 100% !important; 
-}
-
 .modal ul li {
   position: relative;
   white-space: initial; 
   padding-left: 2rem; 
+  color: #222; 
 }
 .modal ul li::before {
   content: ''; 
   position: absolute; 
   width: 10px; 
   height: 10px; 
-  background-color: rgba(255, 255, 255, 0.4); 
+  background-color: rgba(0, 0, 0, 0.5); 
   top: 8%; 
   left: -1rem; 
   border-radius: 50%; 

@@ -92,12 +92,10 @@ newBtn.addEventListener('click', function () {
 const openModal = function () {
   modal.classList.remove('hidden') ;
   overlay.classList.remove('hidden');  
-  document.querySelector('h3').classList.add('h3'); 
 }
 const closeModal = function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
-  document.querySelector('h3').classList.remove('h3'); 
 }
 
 // Open The Popup
